@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,700&display=swap');
+
+:root {
+	--primary-color: #8BC53F;
+	--secondary-color: #6D6E70;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*BANNER*/
+.bannerContainer {
+	position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.whiteBg {
+	position: absolute;
+	top: 150px;
+	height: 200px;
+	width: 50%;
+	background-color: white;
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+	position: absolute;
+	top: 170px;
+	left: 240px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.the {
+	font-family: Roboto;
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--secondary-color);
+	font-style: italic;
+	position: absolute;
+	top: 203px;
+	left: 510px;
+}
+
+.fast {
+	color: var(--primary-color);
+	font-family: Roboto;
+	font-size: 3rem;
+	font-weight: 700;
+	font-style: italic;
+	position: absolute;
+	top: 235px;
+	left: 240px;
+}
+
+.way {
+	font-family: Roboto;
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--secondary-color);
+	font-style: italic;
+	position: absolute;
+	top: 285px;
+	left: 240px;
+}
+
+
+
+
+/*INPUT*/
+.formContainer {
+	position: relative;
+
+}
+
+.greenBg {
+	position: absolute;
+	background-color: var(--primary-color);
+	left: 240px;
+	top: 550px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 20px;
+}
+
+.greenBg:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -75px;
+	border-left: 25px solid var(--primary-color);
+	border-right: 50px solid transparent;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+}
+
+.demo {
+	color: white;
+	font-weight: 500;
+	font-size: 2rem;
+}
+
+.learn {
+	color: white;
+	font-weight: 500;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.formBg {
+	position: absolute;
+	background-color: white;
+	left: 500px;
+	top: 550px;
+	border-radius: 5px;
+	padding: 20px;
+	width: 50%;
+	height: 103.5px;
+}
+
+.how {
+	padding-left: 200px;
+	color: var(--secondary-color);
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.improve {
+	color: var(--primary-color);
+}
+
+Form {
+	padding-left: 100px;
+}
+
+.formName {
+	margin: 10px;
+	font-size: 1rem;
+}
+
+.btn {
+	background-color: var(--primary-color);
+	width: 33%;
+	padding: 0 10px;
+	color: white;
+	font-size: 1rem;
+	height: 40px;
+	border-color: #6f973b;
+	border-radius: 5px;
 }
